@@ -140,7 +140,6 @@ ul {
 }
 
 .teaser__img img {
-  max-width: 700px;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -152,6 +151,11 @@ ul {
     object-position: right center;
   }
 }
+@media (min-width: 992px) {
+  .teaser__img img {
+    max-width: 700px;
+  }
+}
 
 .teaser__avatar {
   display: flex;
@@ -161,38 +165,6 @@ ul {
 }
 .teaser__avatar .teaser__avatar-content {
   margin-left: 10px;
-}
-
-body {
-  font-family: "Nunito", sans-serif;
-  background-color: #fff;
-}
-
-.bg-color-secondary {
-  background-color: #f7f9fc;
-}
-
-.bg-color-tertiary {
-  background-color: #e0c097;
-}
-
-.subtitle {
-  color: #bdbdbd;
-}
-
-.padding-100 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.navbar {
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-}
-
-.navbar__logo {
-  max-width: 160px;
 }
 
 .simple-card {
@@ -259,6 +231,63 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.review-card {
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .review-card {
+    margin-bottom: 50px;
+  }
+}
+.review-card img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 90px;
+}
+.review-card p {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #fff;
+}
+
+.bg-color-secondary {
+  background-color: #f7f9fc;
+}
+
+.bg-color-tertiary {
+  background-color: #e0c097;
+}
+
+.subtitle {
+  color: #bdbdbd;
+}
+
+.padding-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+@media (max-width: 992px) {
+  .navbar {
+    background-color: #2d2424;
+  }
+}
+
+.navbar__logo {
+  max-width: 160px;
 }
 
 /*# sourceMappingURL=index.css.map */
